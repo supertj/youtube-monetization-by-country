@@ -1,0 +1,77 @@
+{
+  "profile": "tabular-data-package",
+  "name": "youtube-monetization-signals-by-country",
+  "title": "YouTube monetization signals by country",
+  "description": "How often YouTube channels in each country show the public signals of a channel in the YouTube Partner Program. 50 countries, 3,192 channels checked, September 2026. Includes the share that could not be determined.",
+  "homepage": "https://monetizationkit.com/data/youtube-monetized-channels-by-country/",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "keywords": [
+    "youtube",
+    "monetization",
+    "youtube partner program",
+    "creator economy",
+    "by country",
+    "advertising",
+    "media"
+  ],
+  "version": "2026.09.07",
+  "resources": [
+    {
+      "name": "youtube-monetization-signals-by-country",
+      "path": "youtube-monetization-signals-by-country.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "country_code",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "English country name"
+          },
+          {
+            "name": "channels_checked",
+            "type": "integer",
+            "description": "Sample size for the row"
+          },
+          {
+            "name": "likely_monetized",
+            "type": "integer",
+            "description": "Channels showing Partner Program signals"
+          },
+          {
+            "name": "possibly_monetized",
+            "type": "integer",
+            "description": "Mixed or partial signals"
+          },
+          {
+            "name": "likely_not_monetized",
+            "type": "integer",
+            "description": "Signals consistently absent"
+          },
+          {
+            "name": "unable_to_determine",
+            "type": "integer",
+            "description": "Not enough readable signal to call"
+          },
+          {
+            "name": "median_subscribers",
+            "type": "integer",
+            "description": "Median subscriber count of channels checked"
+          }
+        ]
+      }
+    }
+  ]
+}
