@@ -69,6 +69,13 @@ CC BY 4.0. Reuse commercially, republish the table, build on it — just credit 
 > MonetizationKit. YouTube monetization signals by country. September 2026.
 > https://monetizationkit.com/data/youtube-monetized-channels-by-country/
 
+Archived on Zenodo with a DOI:
+
+- All versions (resolves to the latest): https://doi.org/10.5281/zenodo.23401598
+- This snapshot (September 2026): https://doi.org/10.5281/zenodo.23401599
+
+`CITATION.cff` in this repository has the same details in a machine-readable form.
+
 ## Contact
 
 hi@monetizationkit.com

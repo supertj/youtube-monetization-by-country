@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "YouTube monetization signals by country"
+version: "2026-09"
+authors:
+  - name: "MonetizationKit"
+    website: "https://monetizationkit.com"
+doi: "10.5281/zenodo.23401598"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23401598"
+    description: "All versions (resolves to the latest)"
+  - type: doi
+    value: "10.5281/zenodo.23401599"
+    description: "September 2026 snapshot"
+  - type: url
+    value: "https://monetizationkit.com/data/youtube-monetized-channels-by-country/"
+    description: "Live version, updated weekly"
+repository: "https://github.com/supertj/youtube-monetization-by-country"
+url: "https://monetizationkit.com/data/youtube-monetized-channels-by-country/"
+license: CC-BY-4.0
+keywords:
+  - YouTube
+  - YouTube Partner Program
+  - monetization
+  - creator economy
