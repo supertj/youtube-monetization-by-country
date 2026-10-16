@@ -57,8 +57,10 @@ Not as the country's monetization rate.
 
 One known bias we found and fixed: our own crawler was being rate-limited, which inflated
 `unable_to_determine` for whichever countries happened to be crawled in a throttled hour.
-The US read 37.1% unable at first; after slowing the crawl and rechecking, it came down to
-14.3%. Failure rates are now monitored over time, not just in aggregate.
+In an early crawl of about 900 channels (5 September 2026), the US read 37.1% unable; after
+slowing the crawl and rechecking, it came down to 14.3% in that early sample. The sample then
+grew to the 3,192 channels in this snapshot, where the US row reads 16 unable out of 66 (24.2%).
+Failure rates are now monitored over time, not just in aggregate.
 
 ## Licence
 
