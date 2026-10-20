@@ -1,0 +1,52 @@
+country_code,country,channels_checked,likely_monetized,possibly_monetized,likely_not_monetized,unable_to_determine
+TH,"Thailand",63,50,5,1,7
+SA,"Saudi Arabia",66,49,8,5,4
+CZ,"Czechia",68,49,9,0,10
+UA,"Ukraine",64,44,5,2,13
+GB,"United Kingdom",96,65,8,7,16
+IQ,"Iraq",60,40,7,1,12
+AE,"United Arab Emirates",65,43,6,4,12
+AR,"Argentina",61,40,4,2,15
+FR,"France",78,50,10,7,11
+NG,"Nigeria",74,47,15,4,8
+PH,"Philippines",71,45,6,5,15
+ES,"Spain",76,48,10,5,13
+BG,"Bulgaria",61,38,14,1,8
+GR,"Greece",72,44,14,2,12
+IT,"Italy",69,42,10,2,15
+ZA,"South Africa",63,38,14,4,7
+VN,"Vietnam",75,45,14,10,6
+PL,"Poland",80,47,10,3,20
+RO,"Romania",65,38,10,1,16
+TZ,"Tanzania",60,35,13,1,11
+KE,"Kenya",55,32,10,2,11
+EG,"Egypt",64,37,9,4,14
+RS,"Serbia",61,34,16,2,9
+HU,"Hungary",72,40,15,0,17
+TW,"Taiwan",63,35,6,1,21
+CO,"Colombia",65,36,13,4,12
+PE,"Peru",62,34,19,1,8
+CA,"Canada",81,44,11,5,21
+DE,"Germany",81,43,13,3,22
+HK,"Hong Kong SAR China",68,36,18,1,13
+NL,"Netherlands",74,39,10,5,20
+RU,"Russia",59,31,5,11,12
+IL,"Israel",70,36,16,2,16
+KZ,"Kazakhstan",66,33,9,3,21
+FI,"Finland",62,30,20,4,8
+MA,"Morocco",69,33,17,3,16
+SN,"Senegal",61,29,14,0,18
+JP,"Japan",110,52,29,8,21
+TR,"Türkiye",93,44,20,2,27
+MX,"Mexico",68,32,17,0,19
+AZ,"Azerbaijan",61,28,6,2,25
+AU,"Australia",38,17,10,2,9
+BR,"Brazil",130,58,28,12,32
+ID,"Indonesia",102,45,25,5,27
+LK,"Sri Lanka",61,26,10,1,24
+BD,"Bangladesh",95,40,8,8,39
+KR,"South Korea",93,39,16,5,33
+PK,"Pakistan",125,50,29,11,35
+IN,"India",367,136,63,56,112
+MY,"Malaysia",62,23,10,4,25
+US,"United States",457,158,94,72,133

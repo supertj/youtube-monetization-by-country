@@ -1,0 +1,46 @@
+== 1. September snapshot, split by channel-membership availability ==
+countries: 50, channels: 3,080
+memberships NOT available: 8 countries, 480 channels | likely 2.9% (14), likely+possibly 65.8%, likely not 5.4%, unable 28.7%
+memberships available: 42 countries, 2,600 channels | likely 29.6% (770), likely+possibly 76.5%, likely not 5.1%, unable 18.4%
+countries without memberships: Kazakhstan, Tanzania, Bangladesh, Pakistan, Azerbaijan, Iraq, Sri Lanka, Russia
+highest 'likely' count among them: 5 of 60; lowest among membership countries: 8 (India, Malaysia)
+bottom eight of the ranking == the eight without memberships: True
+share of cross-country variance explained by the membership split: 56.7%
+
+== 2. September rule vs October rule ==
+countries in both tables: 50; with |change in channels| <= 6: 28
+memberships NOT available: 6 countries, mean likely share 3.6% -> 52.7% (+49.1 points)
+memberships available: 22 countries, mean likely share 31.4% -> 59.0% (+27.6 points)
+Iraq: 60 -> 60 channels, likely 2 -> 40
+Tanzania: 60 -> 60 channels, likely 0 -> 35
+rank correlation of likely share, September vs October, same-sample countries: 0.49
+  ...membership countries only (22): 0.49
+rank correlation, all 50 countries in both tables: 0.44
+October table: 51 countries, 4,382 channels
+  October rank  6 of 51: Iraq (66.7%)
+  October rank 20 of 51: Tanzania (58.3%)
+  October rank 32 of 51: Russia (52.5%)
+  October rank 34 of 51: Kazakhstan (50.0%)
+  October rank 41 of 51: Azerbaijan (45.9%)
+  October rank 45 of 51: Sri Lanka (42.6%)
+  October rank 46 of 51: Bangladesh (42.1%)
+  October rank 48 of 51: Pakistan (40.0%)
+countries in both top 10s: 4
+
+== 3. Noise check, 42 membership countries, September ==
+likely_share: pooled 29.6%; observed SD 9.3 pts; SD from noise alone (median of sims) 5.8 pts; noise variance / observed variance 39%; sims with SD >= observed: 0.0000%
+any_positive_share: pooled 76.5%; observed SD 7.5 pts; SD from noise alone (median of sims) 5.4 pts; noise variance / observed variance 52%; sims with SD >= observed: 0.0530%
+unable_share: pooled 18.4%; observed SD 6.9 pts; SD from noise alone (median of sims) 4.9 pts; noise variance / observed variance 52%; sims with SD >= observed: 0.0390%
+membership countries outside the 95% noise band around 29.6%: 10 of 42 (about 2 expected by chance): Taiwan, Czechia, Netherlands, Indonesia, Nigeria, Argentina, Philippines, South Korea, India, Malaysia
+95% noise band at n=60: 18.1% to 41.2%
+membership countries whose share falls inside that n=60 band: 29 of 42
+Hungary 40.3% vs Bulgaria 26.7%: gap 13.6 pts, z 1.68, p 0.09
+rank correlation, median subscribers vs likely share (membership countries): -0.03
+
+== 4. Unable to determine ==
+mean unable share: without memberships 28.7%, with 18.3%; gap 10.5 pts; permutation p = 0.0006
+overall unable: 617 of 3,080 (20.0%)
+rank correlation, likely share of all checked vs of determined only: 0.98
+  Sri Lanka: likely 8.3%, could be up to 50.0% if every unknown were likely (25 unknown)
+  Azerbaijan: likely 1.7%, could be up to 38.3% if every unknown were likely (22 unknown)
+  Pakistan: likely 1.7%, could be up to 36.7% if every unknown were likely (21 unknown)
