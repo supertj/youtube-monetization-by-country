@@ -1,7 +1,7 @@
 ---
 title: YouTube monetization signals by country
 short_title: Introduction
-description: An open dataset on 3,080 trending YouTube channels in 50 countries, read closely. Where the channels came from, how each verdict is made, what the country shares look like with their uncertainty, and notebooks that recompute every number.
+description: An open dataset on 3,080 trending YouTube channels in 50 countries, read closely. Where the channels came from, how each verdict is made, what the country shares look like with their uncertainty, and notebooks that recompute the figures and the numbers in their text.
 ---
 
 Nobody outside YouTube can look up whether a channel is monetized. YouTube stopped exposing the `is_monetization_enabled` flag in November 2023, so every tool that answers the question infers it from what a channel shows in public: a Join button, a store, ads on its videos, a subscriber count above the Partner Program thresholds.
@@ -29,7 +29,7 @@ Three things to keep in mind before looking at any one country:
 - [How the scoring rule shaped the ranking](scoring-rule.ipynb): why the eight countries at the bottom are the eight without channel memberships.
 - [Rebuild it yourself](reproduce.md): commands and package versions.
 
-The two notebook chapters show their code. Every figure and table is computed from the CSV files when the book is built, and so are the numbers in the notebook chapters' text. Facts about how the sample was drawn come from the dataset's README.
+The two notebook chapters show their code, and their figures, tables and the numbers in their text are computed from the CSV files when the book is built. Facts about how the sample was drawn come from the dataset's README.
 
 ## Data, citation and licence
 

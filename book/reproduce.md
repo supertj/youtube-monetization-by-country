@@ -29,7 +29,7 @@ jupyter book start --execute          # live preview on a local port
 jupyter book build --html --execute   # static site in _build/html
 ```
 
-`--execute` runs both notebooks during the build, so every figure and every number in the notebook chapters comes from the CSV files as they are at that moment. Change a CSV and rebuild, and the text follows.
+`--execute` runs both notebooks during the build, so the figures and the numbers in the notebook chapters' text come from the CSV files as they are at that moment. Change a CSV and rebuild, and the text follows.
 
 ## Versions used for this edition
 

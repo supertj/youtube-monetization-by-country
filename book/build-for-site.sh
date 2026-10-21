@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # Resolve to an absolute path before the cd below, so a relative argument can't point somewhere else
-site_repo="$(cd "${1:?usage: $0 /path/to/monetizationkit}" && pwd)"
+site_repo="$(cd -- "${1:?usage: $0 /path/to/monetizationkit}" >/dev/null && pwd)"
 # Guard against wiping the wrong directory: the target must look like the website repository
 if [[ ! -f "$site_repo/next.config.ts" || ! -d "$site_repo/public" ]]; then
   echo "$site_repo does not look like the MonetizationKit website repository" >&2
