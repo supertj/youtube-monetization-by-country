@@ -1,0 +1,18 @@
+/* MonetizationKit green in place of the theme's default blue (same values as the main site) */
+:root {
+  --myst-color-link: #1b7d59;
+  --myst-color-link-hover: #146346;
+  --myst-color-link-underline: #1b7d59;
+  --myst-color-active: #1b7d59;
+  --myst-color-focus-ring: #1b7d59;
+  --myst-color-primary: #1b7d59;
+}
+
+.dark {
+  --myst-color-link: #41c896;
+  --myst-color-link-hover: #6fd8b0;
+  --myst-color-link-underline: #41c896;
+  --myst-color-active: #41c896;
+  --myst-color-focus-ring: #41c896;
+  --myst-color-primary: #41c896;
+}

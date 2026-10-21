@@ -1,0 +1,41 @@
+# Jupyter Book 2 (MyST) configuration. Build: see README.md in this folder.
+version: 1
+project:
+  title: YouTube monetization signals by country
+  subtitle: A close reading of an open dataset
+  description: How often trending YouTube channels in 50 countries show the public signals of the YouTube Partner Program, how those verdicts are made, and how far to trust them. Every figure is recomputed from the data when the book is built.
+  authors:
+    - name: Super Lede
+      affiliations:
+        - MonetizationKit
+  keywords:
+    - YouTube
+    - YouTube Partner Program
+    - creator economy
+    - open data
+    - reproducible analysis
+  toc:
+    - file: index.md
+    - file: sampling.md
+    - file: method.md
+    - file: country-shares.ipynb
+    - file: scoring-rule.ipynb
+    - file: reproduce.md
+  exclude:
+    - README.md
+site:
+  template: book-theme
+  # Suffix of every page's <title>; without it the home page title repeats the project title
+  title: MonetizationKit
+  options:
+    logo: images/logo.svg
+    logo_text: MonetizationKit
+    favicon: images/favicon.png
+    style: style.css
+    # links to the main site open in the same tab and are not marked as external
+    internal_domains: monetizationkit.com
+  parts:
+    primary_sidebar_footer: |
+      Built with Jupyter Book 2.
+    footer: |
+      Data and analysis by [MonetizationKit](https://monetizationkit.com/). The dataset is free to reuse under CC BY 4.0. The live table, recomputed every Monday, is on the [data page](https://monetizationkit.com/data/youtube-monetized-channels-by-country/).

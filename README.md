@@ -21,6 +21,15 @@ We publish what we can actually observe, including the share we cannot call eith
 | `youtube-monetization-signals-by-country.csv` | One row per country. Counts, not percentages. |
 | `datapackage.json` | Frictionless Data descriptor with column types. |
 
+## The book
+
+A Jupyter Book walks through this dataset: how the sample was drawn, how a verdict is made,
+the country shares with their uncertainty, and how the September scoring rule shaped the bottom
+of the ranking. Its notebooks recompute every figure from the CSV files here.
+
+Read it at https://monetizationkit.com/data/book/. The source is in `book/`, with build
+instructions in `book/README.md`.
+
 ## Columns
 
 | Column | Meaning |
