@@ -17,7 +17,7 @@ Every channel gets one of four verdicts: likely monetized, possibly monetized, l
 
 ## The September 2026 rule
 
-The snapshot in this repository was scored with the rule MonetizationKit used in early September 2026. At that time the ad signal (S3) counted as present when at least two thirds of the sampled long videos had ads.
+The September 2026 snapshot was scored with the rule MonetizationKit used in early September 2026. At that time the ad signal (S3) counted as present when at least two thirds of the sampled long videos had ads.
 
 Likely monetized
 : 1,000+ subscribers, a Join button, and ads on recent long videos. All three.
