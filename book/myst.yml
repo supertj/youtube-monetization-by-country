@@ -25,6 +25,8 @@ project:
     - README.md
 site:
   template: book-theme
+  # Suffix of every page's <title>; without it the home page title repeats the project title
+  title: MonetizationKit
   options:
     logo: images/logo.svg
     logo_text: MonetizationKit

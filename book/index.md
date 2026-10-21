@@ -1,12 +1,12 @@
 ---
 title: YouTube monetization signals by country
 short_title: Introduction
-description: An open dataset of 3,080 trending YouTube channels in 50 countries, read closely. Where the channels came from, how each verdict is made, what the country shares look like with their uncertainty, and notebooks that recompute every number.
+description: An open dataset on 3,080 trending YouTube channels in 50 countries, read closely. Where the channels came from, how each verdict is made, what the country shares look like with their uncertainty, and notebooks that recompute every number.
 ---
 
 Nobody outside YouTube can look up whether a channel is monetized. YouTube stopped exposing the `is_monetization_enabled` flag in November 2023, so every tool that answers the question infers it from what a channel shows in public: a Join button, a store, ads on its videos, a subscriber count above the Partner Program thresholds.
 
-In September 2026 MonetizationKit ran that inference on 3,080 trending channels in 50 countries and published the counts for each country as an open dataset. This book goes through that dataset slowly. It explains where the channels came from and how each verdict was reached, shows the country shares together with how uncertain they are, and works through the biggest problem we found in our own numbers: the bottom of the September ranking was produced by the scoring rule, not by the countries.
+In September 2026 we ran that inference on 3,192 trending channels and published the counts for the 50 countries where at least 30 had been checked, 3,080 channels in all. ("We" in this book is MonetizationKit, which runs the checker and publishes the data.) This book goes through that dataset slowly. It explains where the channels came from and how each verdict was reached, shows the country shares together with how uncertain they are, and works through the biggest problem we found in our own numbers: the bottom of the September ranking was produced by the scoring rule, not by the countries.
 
 :::{figure} #fig-verdicts
 :label: fig-verdicts-intro
@@ -17,9 +17,9 @@ Verdicts for the channels checked in each country under the September 2026 rule,
 
 Three things to keep in mind before looking at any one country:
 
-- A row describes the channels we checked in that country, not every channel there. They are trending channels, and most have hundreds of thousands of subscribers.
+- A row describes the channels we checked in that country, not every channel there. They are trending channels: in all but one country, the median channel we checked has more than 100,000 subscribers.
 - "Likely monetized" is an inference from public signals. YouTube has not confirmed any of these verdicts.
-- One channel in five could not be called. Those channels stay in the table as "unable to determine" instead of being guessed into another group.
+- One channel in five could not be called. Those channels stay in the table as "unable to determine".
 
 ## What is in the book
 
@@ -29,7 +29,7 @@ Three things to keep in mind before looking at any one country:
 - [How the scoring rule shaped the ranking](scoring-rule.ipynb): why the eight countries at the bottom are the eight without channel memberships.
 - [Rebuild it yourself](reproduce.md): commands and package versions.
 
-The two notebook chapters show their code. Every figure and table, and every number about the countries, is computed from the CSV files when the book is built. Facts about how the sample was drawn come from the dataset's README.
+The two notebook chapters show their code. Every figure and table is computed from the CSV files when the book is built, and so are the numbers in the notebook chapters' text. Facts about how the sample was drawn come from the dataset's README.
 
 ## Data, citation and licence
 
@@ -37,6 +37,6 @@ The data is free to reuse under CC BY 4.0, commercially too, as long as you cred
 
 > MonetizationKit. YouTube monetization signals by country. September 2026. DOI 10.5281/zenodo.23401599
 
-DOI 10.5281/zenodo.23401598 always resolves to the latest archived version. The live table, recomputed every Monday, is on the [MonetizationKit data page](https://monetizationkit.com/data/youtube-monetized-channels-by-country/).
+DOI 10.5281/zenodo.23401598 always resolves to the latest archived version. The live table is on the [MonetizationKit data page](https://monetizationkit.com/data/youtube-monetized-channels-by-country/).
 
 The book, its notebooks and the data files are in the GitHub repository `supertj/youtube-monetization-by-country`, in the `book` folder. Questions and corrections go to hi@monetizationkit.com.

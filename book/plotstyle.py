@@ -5,8 +5,8 @@ checked for colour-vision deficiency (adjacent pairs) on the light surface below
 deliberately neutral because "unable to determine" is the absence of an answer.
 """
 
-import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.ticker import PercentFormatter
 
 SURFACE = "#fcfcfb"
 INK = "#0b0b0b"
@@ -32,7 +32,7 @@ VERDICT_LABELS = {
 MEMBERSHIPS = "#2a78d6"
 NO_MEMBERSHIPS = "#eb6834"
 
-PERCENT = matplotlib.ticker.PercentFormatter(1.0, decimals=0)
+PERCENT = PercentFormatter(1.0, decimals=0)
 
 plt.rcParams.update(
     {

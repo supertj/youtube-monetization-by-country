@@ -5,11 +5,11 @@ description: How the channels in the September 2026 snapshot were chosen, whose 
 
 ## The sampling frame
 
-The channels were not drawn at random from all of YouTube. According to the dataset README, the frame was built like this: for all 111 regions the YouTube Data API exposes, we pulled the most popular videos (`videos.list?chart=mostPopular`) in 10 content categories and took the channels that own them. That gave 13,388 channels, 10,348 of which declare a country. Countries were then filled toward a target sample size instead of being sampled round-robin, so that a published row has enough channels to say something.
+The channels were not drawn at random from all of YouTube. We built the frame like this, as the dataset README records: for all 111 regions the YouTube Data API exposes, we pulled the most popular videos (`videos.list?chart=mostPopular`) in 10 content categories and took the channels that own them. That gave 13,388 channels, 10,348 of which declare a country. Countries were then filled toward a target sample size instead of being sampled round-robin, so that a published row has enough channels to say something.
 
 This frame decides what the dataset can describe. These are channels whose videos were trending in September 2026, so they lean large and currently active. [How a verdict is made](method.md) comes back to what that means when you read a country's share.
 
-MonetizationKit has since stopped using the YouTube Data API, so this sampling list is not kept and will not be repeated in the same form.
+We have since stopped using the YouTube Data API, so this sampling list is not kept and will not be repeated in the same form.
 
 Each channel counts once in the table, however many times it was checked.
 
@@ -45,10 +45,10 @@ All paths are relative to the root of the repository.
 | `unable_to_determine` | Not enough could be read to say either way |
 | `median_subscribers` | Median subscriber count of the channels checked in that country |
 
-The four verdict columns add up to `channels_checked` in every row, and [Shares by country](country-shares.ipynb) checks that before using the file. If you load it yourself, read `country_code` as text. Namibia's code is `NA`, which pandas and R both turn into a missing value by default.
+The four verdict columns add up to `channels_checked` in every row, and [Shares by country](country-shares.ipynb) checks that before using the file. If you load it yourself, read `country_code` as text. Namibia is not in this snapshot, but the live table could gain it, and its code `NA` is read as a missing value by pandas and R by default.
 
 ## Archived and live versions
 
 The snapshot is archived on Zenodo. DOI 10.5281/zenodo.23401599 points to this September 2026 version, and DOI 10.5281/zenodo.23401598 to whichever version is the latest.
 
-The [live table](https://monetizationkit.com/data/youtube-monetized-channels-by-country/) on MonetizationKit is recomputed every Monday and will not match the snapshot. Channels have been added since September, and the scoring rule changed between 29 September and 1 October 2026. [How the scoring rule shaped the ranking](scoring-rule.ipynb) compares the two.
+The [live table](https://monetizationkit.com/data/youtube-monetized-channels-by-country/) on MonetizationKit is recomputed every Monday, so it will not match the snapshot. Channels have been added since September, and the scoring rule changed between 29 September and 1 October 2026. [How the scoring rule shaped the ranking](scoring-rule.ipynb) compares the two.

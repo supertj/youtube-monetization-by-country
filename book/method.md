@@ -17,7 +17,7 @@ Every channel gets one of four verdicts: likely monetized, possibly monetized, l
 
 ## The September 2026 rule
 
-The September 2026 snapshot was scored with the rule MonetizationKit used in early September 2026. At that time the ad signal (S3) counted as present when at least two thirds of the sampled long videos had ads.
+The September 2026 snapshot was scored with the rule we used in early September 2026. At that time the ad signal (S3) counted as present when at least two thirds of the sampled long videos had ads.
 
 Likely monetized
 : 1,000+ subscribers, a Join button, and ads on recent long videos. All three.
@@ -46,26 +46,26 @@ Every stored check behind the live table was re-scored under the new rule, so th
 
 ## Limits
 
-### Trending channels, not typical ones
+### Trending channels are big channels
 
-The channels come from trending charts, and most of them have hundreds of thousands of subscribers. The `median_subscribers` column gives the figure for each country. A low share for a country does not mean creators there rarely get monetized. It means the large channels we checked showed fewer public signals.
+The channels come from trending charts. In 49 of the 50 countries the median channel we checked has more than 100,000 subscribers, and the `median_subscribers` column gives the figure for each country. So a low share for a country says the large channels we checked there showed fewer public signals. It says little about how often creators in that country get monetized.
 
-### A row is not a monetization rate
+### How to read a row
 
 Read a row as: of the channels we checked in this country, this many showed the signals. With about 60 channels per country, each share also carries a wide margin of error. [Shares by country](country-shares.ipynb) puts numbers on it.
 
 ### One in five could not be called
 
-A channel ends up as unable to determine when its pages could not be read, when YouTube blocked the ad sample, or when the signals pointed neither way. These channels are kept as their own group, not guessed into another one. They are not spread evenly across countries, which matters when two countries are compared.
+A channel ends up as unable to determine when its pages could not be read, when YouTube blocked the ad sample, or when the signals pointed neither way. These channels stay in their own group. They are not spread evenly across countries, which matters when two countries are compared.
 
 ### A bias in our own crawler
 
-The dataset README describes one bias found and fixed before publication. The crawler was being rate-limited, which inflated "unable to determine" for whichever countries happened to be crawled in a throttled hour. In an early crawl of about 900 channels on 5 September 2026, the United States read 37.1% unable. After the crawl was slowed and those channels rechecked, the figure in that early sample came down to 14.3%. In the full snapshot, the US row reads 16 unable out of 66. Failure rates are now watched over time, not only in aggregate.
+The dataset README describes one bias found and fixed before publication. The crawler was being rate-limited, which inflated "unable to determine" for whichever countries happened to be crawled in a throttled hour. In an early crawl of about 900 channels on 5 September 2026, the United States read 37.1% unable. After the crawl was slowed and those channels rechecked, the figure in that early sample came down to 14.3%. In the full snapshot the US row reads 16 unable out of 66, or 24.2%; we have not traced why it rose again as the sample grew. Failure rates are now tracked over time, so a throttled hour shows up as a spike.
 
 ### A signal can only appear where YouTube offers it
 
-Channel memberships, stores and the Partner Program itself are not available in every country. Russia, one of the 50 countries in the snapshot, was not on YouTube's list of countries where the Partner Program is open when MonetizationKit last checked that list on 1 October 2026. Where a feature does not exist, a missing signal is not evidence of anything. The last chapter shows how much this mattered for memberships.
+Channel memberships, stores and the Partner Program itself are not available in every country. Russia, one of the 50 countries in the snapshot, was not on YouTube's list of countries where the Partner Program is open when we last checked that list on 1 October 2026. Where a feature does not exist, a missing signal is not evidence of anything. The last chapter shows how much this mattered for memberships.
 
 ### Public pages only
 
-We see what a logged-out visitor sees: no earnings, no Studio data, nothing from the owner. A verdict is an inference from public signals, not a statement from YouTube.
+We see what a logged-out visitor sees: no earnings, no Studio data, nothing from the owner. YouTube has confirmed none of these verdicts.
