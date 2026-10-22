@@ -77,8 +77,8 @@ channels people were curious about. A low share for a country does not mean crea
 get monetized. It means the channels we checked there showed fewer public signals.
 
 The mix also varies by country. Since the September sample hasn't been redrawn, new rows come
-from lookups, and they are concentrated in a few countries: the United States went from 66
-channels in September to 457, India from 60 to 367. In 28 of the 50 September countries the
+from lookups, and more than half of the growth is in two countries: the United States went from
+66 channels in September to 457, India from 60 to 367. In 28 of the 50 September countries the
 count moved by six channels or fewer.
 
 Read a row as: *of the channels we checked in this country, this many showed the signals.*
