@@ -11,10 +11,9 @@ The scoring rule and the sample have both changed since the September 2026 snaps
 
 ## Why this exists
 
-YouTube removed the public `is_monetization_enabled` flag in November 2023. Since then nobody
-outside YouTube can read a channel's monetization status directly — every "monetization checker"
-on the internet, ours included, is inferring it from public signals. Most of them still advertise
-95% accuracy for a number that stopped being publicly available three years ago.
+YouTube removed the public `is_monetization_enabled` flag in November 2023. Since then a
+channel's monetization status can't be read from outside YouTube. Our checker infers it from
+public signals, and YouTube doesn't confirm those verdicts.
 
 We publish what we can actually observe, including the share we cannot call either way.
 
