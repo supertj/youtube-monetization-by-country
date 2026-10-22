@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "name": "youtube-monetization-signals-by-country",
   "title": "YouTube monetization signals by country",
-  "description": "How often YouTube channels in each country show the public signals of a channel in the YouTube Partner Program. 50 countries, 3,192 channels checked, September 2026. Includes the share that could not be determined.",
+  "description": "How often YouTube channels in each country show the public signals of a channel in the YouTube Partner Program. October 2026 snapshot: 51 countries, 4,514 channels checked, recomputed on 19 October 2026. Includes the share that could not be determined. The scoring rule and the sample have changed since the September 2026 snapshot; see the changelog in README.md.",
   "homepage": "https://monetizationkit.com/data/youtube-monetized-channels-by-country/",
   "licenses": [
     {
@@ -20,10 +20,11 @@
     "advertising",
     "media"
   ],
-  "version": "2026.09.07",
+  "version": "2026.10.19",
   "resources": [
     {
       "name": "youtube-monetization-signals-by-country",
+      "profile": "tabular-data-resource",
       "path": "youtube-monetization-signals-by-country.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -68,7 +69,7 @@
           {
             "name": "median_subscribers",
             "type": "integer",
-            "description": "Median subscriber count of channels checked"
+            "description": "Median subscriber count of channels checked. Empty from the October 2026 snapshot on."
           }
         ]
       }
