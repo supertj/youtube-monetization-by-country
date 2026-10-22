@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
 title: "YouTube monetization signals by country"
-version: "2026-09"
+version: "2026-10"
+date-released: "2026-10-22"
 authors:
   - name: "MonetizationKit"
     website: "https://monetizationkit.com"

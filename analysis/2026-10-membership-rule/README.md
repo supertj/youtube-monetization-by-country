@@ -12,7 +12,7 @@ It reads the three CSVs in `data/` and writes the three figures and `results.txt
 
 ## Inputs
 
-- `data/youtube-monetization-signals-by-country-2026-09.csv`: the September snapshot, the same file as `youtube-monetization-signals-by-country.csv` in the repository root (Zenodo: https://doi.org/10.5281/zenodo.23401599).
+- `data/youtube-monetization-signals-by-country-2026-09.csv`: the September snapshot, the file that sat at `youtube-monetization-signals-by-country.csv` in the repository root until the October 2026 snapshot replaced it on 22 October (Zenodo: https://doi.org/10.5281/zenodo.23401599).
 - `data/country-monetization-recomputed-2026-10-19.csv`: the table recomputed on 19 October 2026, downloaded on 20 October from https://monetizationkit.com/api/data/country-monetization/ . The live file changes every Monday, so this copy is kept here.
 - `data/youtube-channel-memberships-locations-2026-10-20.csv`: the locations where YouTube Help says channel memberships are available, transcribed on 20 October 2026 with ISO 3166-1 alpha-2 codes added.
 

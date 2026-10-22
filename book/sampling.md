@@ -27,8 +27,9 @@ All paths are relative to the root of the repository.
 
 | File | What it holds |
 |---|---|
-| `youtube-monetization-signals-by-country.csv` | The September 2026 snapshot. One row per country, counts rather than percentages. |
-| `datapackage.json` | A Frictionless Data descriptor with the column types. |
+| `analysis/2026-10-membership-rule/data/youtube-monetization-signals-by-country-2026-09.csv` | The September 2026 snapshot that this book reads. One row per country, counts rather than percentages. |
+| `youtube-monetization-signals-by-country.csv` | The latest snapshot. It held September 2026 until 22 October 2026 and now holds October 2026, so the book no longer reads it. |
+| `datapackage.json` | A Frictionless Data descriptor with the column types of the latest snapshot. |
 | `analysis/2026-10-membership-rule/data/country-monetization-recomputed-2026-10-19.csv` | The country table as recomputed on 19 October 2026 under the revised rule, downloaded on 20 October. Used in the last chapter. |
 | `analysis/2026-10-membership-rule/data/youtube-channel-memberships-locations-2026-10-20.csv` | The locations where YouTube Help listed channel memberships as available on 20 October 2026, with ISO codes added. |
 
