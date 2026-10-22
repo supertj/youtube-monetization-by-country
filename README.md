@@ -30,8 +30,9 @@ We publish what we can actually observe, including the share we cannot call eith
 A Jupyter Book walks through the September 2026 snapshot: how the sample was drawn, how a
 verdict is made, the country shares with their uncertainty, and how the September scoring rule
 shaped the bottom of the ranking. Its notebooks recompute every figure from the September file
-listed above, not from the October CSV. The analysis in `analysis/2026-10-membership-rule` also
-starts from the September snapshot.
+listed above, and the last chapter also reads the 19 October table kept in
+`analysis/2026-10-membership-rule/data/`. Neither notebook reads the CSV in the repository root.
+The analysis in `analysis/2026-10-membership-rule` also starts from the September snapshot.
 
 Read it at https://monetizationkit.com/data/book/. The source is in `book/`, with build
 instructions in `book/README.md`.
