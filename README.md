@@ -133,6 +133,8 @@ code written for the September version keeps working, but every value in it is e
 their public YouTube pages instead of the Data API. The country is still the one the creator
 sets on the channel.
 
+Archived on Zenodo as https://doi.org/10.5281/zenodo.23601867.
+
 ### September 2026
 
 First release. 50 countries, 3,192 channels checked, 3,080 of them in the published rows.
@@ -150,6 +152,7 @@ CC BY 4.0. Reuse commercially, republish the table, build on it — just credit 
 Archived on Zenodo with a DOI:
 
 - All versions (resolves to the latest): https://doi.org/10.5281/zenodo.23401598
+- October 2026 snapshot: https://doi.org/10.5281/zenodo.23601867
 - September 2026 snapshot: https://doi.org/10.5281/zenodo.23401599
 
 `CITATION.cff` in this repository has the same details in a machine-readable form.
