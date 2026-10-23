@@ -13,6 +13,9 @@ identifiers:
     value: "10.5281/zenodo.23401598"
     description: "All versions (resolves to the latest)"
   - type: doi
+    value: "10.5281/zenodo.23601867"
+    description: "October 2026 snapshot"
+  - type: doi
     value: "10.5281/zenodo.23401599"
     description: "September 2026 snapshot"
   - type: url
