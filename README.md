@@ -37,6 +37,12 @@ The analysis in `analysis/2026-10-membership-rule` also starts from the Septembe
 Read it at https://monetizationkit.com/data/book/. The source is in `book/`, with build
 instructions in `book/README.md`.
 
+## Other copies
+
+- Kaggle has the table as a [dataset](https://www.kaggle.com/datasets/superlede/youtube-monetization-signals-by-country), and a [Kaggle notebook](https://www.kaggle.com/code/superlede/youtube-monetization-by-country-october-2026) goes through the October 2026 snapshot country by country.
+- Each Zenodo record is a frozen copy of one snapshot, for example the [September 2026 record](https://zenodo.org/records/23401599). The DOIs are under [Citation](#citation).
+- For checking one channel rather than the whole table, the LibreOffice templates site has spreadsheet trackers for the [YouTube Partner Program requirements](https://extensions.libreoffice.org/en/extensions/show/99689) and [Facebook Page monetization](https://extensions.libreoffice.org/en/extensions/show/99703).
+
 ## Columns
 
 | Column | Meaning |
