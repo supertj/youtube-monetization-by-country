@@ -42,6 +42,7 @@ instructions in `book/README.md`.
 - Kaggle has the table as a [dataset](https://www.kaggle.com/datasets/superlede/youtube-monetization-signals-by-country), and a [Kaggle notebook](https://www.kaggle.com/code/superlede/youtube-monetization-by-country-october-2026) goes through the October 2026 snapshot country by country.
 - Each Zenodo record is a frozen copy of one snapshot, for example the [September 2026 record](https://zenodo.org/records/23401599). The DOIs are under [Citation](#citation).
 - For checking one channel rather than the whole table, the LibreOffice templates site has spreadsheet trackers for the [YouTube Partner Program requirements](https://extensions.libreoffice.org/en/extensions/show/99689) and [Facebook Page monetization](https://extensions.libreoffice.org/en/extensions/show/99703).
+- ClawHub's [YouTube monetization checker skill](https://clawhub.ai/supertj/skills/youtube-monetization-checker) shows AI agents how to check a channel with MonetizationKit and interpret the verdict and its public signals.
 
 ## Columns
 
